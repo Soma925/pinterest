@@ -1,5 +1,7 @@
 import React from 'react'
 import '../../src/App.css';
+// import Pin from './Pin.js';
+import Signup from './Signup';
 import img1 from '../../src/images/tea.jpg';
 import img2 from '../../src/images/singara.jpg';
 import img3 from '../../src/images/sandwich.jpg';
@@ -22,8 +24,16 @@ import diyimg4 from '../../src/images/diy4.jpg';
 import diyimg5 from '../../src/images/diy5.jpg';
 import diyimg6 from '../../src/images/diy6.jpg';
 
+import chiken1 from '../../src/images/chiken1.jpg';
+import chiken2 from '../../src/images/chiken2.jpg';
+import chiken3 from '../../src/images/chiken3.jpg';
+import chiken4 from '../../src/images/chiken4.jpg';
+
+import multipleImage from '../../src/images/multipleImage.jpg';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 export default function Body() {
   return (
@@ -128,8 +138,65 @@ export default function Body() {
     </div>
     {/* Second part */}
     <div className="searchBody">
-        
+        <div className="row">
+            <div className="col">
+                <div className="searchimages">
+                    
+                    <a href="/"><img className='chiken1' src={chiken1} alt="" /></a>
+                    <a href="/"><img className='chiken2' src={chiken2} alt="" /></a>
+                    <a href="/"><img className='chiken3' src={chiken3} alt="" /></a>
+                    <a href="/"><img className='chiken4' src={chiken4} alt="" /></a>
+                    <div className="searchChiken"><a href="/"><FontAwesomeIcon icon={faMagnifyingGlass} /> easy chicken dinner</a></div>
+                    
+                </div>
+            </div>
+            <div className="col">
+                <div className='searchText'>
+                <div className='searchHeadinh'>Search for an idea</div>
+                <div className="searchSubHeading">What do you want to try next? Think of something you’re into—like “easy chicken dinner”—and see what you find.</div>
+                    <div className="button">
+                    <a className="expbutton" href="/">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div className="row signupIdea">
+    <img className='multipleImage' src={multipleImage} alt="" />
+        <div className="col pinsignupIdea">
+            {/* <div style={styles.pin_container}>
+                <Pin size='small' src={chiken4}></Pin>  
+                <Pin size='medium'/>  
+                <Pin size='large'/> 
+                <Pin size='small'/>  
+                <Pin size='medium'/>  
+                <Pin size='large'/>  
+                <Pin size='small'/>  
+                <Pin size='medium'/>  
+                <Pin size='large'/> 
+                <Pin size='small'/>  
+                <Pin size='medium'/>  
+                <Pin size='large'/> 
+            </div> */}
+            <div className="pintext">Sign up to get your ideas</div>
+        </div>
+        <div className="col pinsignup">
+            <div className='pinsignupform '>
+                <div className='singForm'>
+                <Signup/>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <div className="footer">
+
     </div>
     </div>
   )
 }
+
+// const styles={
+//     pin_container:{margin:0,padding:0,width:'100%',backgroundColor:'transparent',position:'relative',left:'50%',transform:'translateX(-50%)',display:'grid',
+//         gridTemplateColumns:'repeat(auto-fill,250px)',gridAutoRows:'10px',
+//     }
+// }
