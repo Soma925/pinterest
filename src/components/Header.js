@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPinterest } from '@fortawesome/free-brands-svg-icons';
-//import './Header.css';
+import Signup from './Signup';
 import '../../src/App.css';
 
 export default function Header() {
@@ -15,6 +15,9 @@ export default function Header() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarScroll">
                     <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" >
+                        <li className="nav-item">
+                            <a className="nav-link" href="/">Watch</a>
+                        </li> 
                         <li className="nav-item">
                         <a className="nav-link" href="/">Explore</a>
                         </li>    
@@ -33,12 +36,25 @@ export default function Header() {
                             <a className="nav-link login" href="/">Log in</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link signup" href="/">Sign up</a>
+                            <a className="nav-link signup" href="/"  data-bs-toggle="modal" data-bs-target="#exampleModal">Sign up</a>
                         </li>		
                     </ul>
                 </div>
             </div>
-            </nav>
+        </nav>
+        {/* <!-- Modal --> */}
+        <div className="modal fade" id="exampleModal" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <Signup/>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
   )
 }
