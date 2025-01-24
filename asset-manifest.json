@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/pinterest/static/css/main.ccdd60d9.css",
-    "main.js": "/pinterest/static/js/main.53e98cbd.js",
+    "main.css": "/pinterest/static/css/main.07179576.css",
+    "main.js": "/pinterest/static/js/main.6ca1a34c.js",
     "static/js/488.1f91b524.chunk.js": "/pinterest/static/js/488.1f91b524.chunk.js",
+    "static/media/chiken4.jpg": "/pinterest/static/media/chiken4.b19b390be73ede1ffb59.jpg",
+    "static/media/multipleImage.jpg": "/pinterest/static/media/multipleImage.f8f3e931e62b1ade7af1.jpg",
+    "static/media/chiken2.jpg": "/pinterest/static/media/chiken2.3f6b65f46d467abf67c6.jpg",
     "static/media/diy5.jpg": "/pinterest/static/media/diy5.5d7880ba655c9c775862.jpg",
+    "static/media/chiken3.jpg": "/pinterest/static/media/chiken3.8df52d56b1c9723e725f.jpg",
     "static/media/diy3.jpg": "/pinterest/static/media/diy3.351f6fcd7cdee6b63703.jpg",
+    "static/media/chiken1.jpg": "/pinterest/static/media/chiken1.79abdd72135181f5ad27.jpg",
     "static/media/diy6.jpg": "/pinterest/static/media/diy6.b4814205d719b966ce7e.jpg",
     "static/media/diy2.jpg": "/pinterest/static/media/diy2.3e26ce67765a394de109.jpg",
     "static/media/diy1.jpg": "/pinterest/static/media/diy1.6016cda256352e2ee868.jpg",
     "static/media/idli.jpg": "/pinterest/static/media/idli.3e516f7ad2c0ce0c87d6.jpg",
     "static/media/burgur.jpg": "/pinterest/static/media/burgur.0d6981a31d6386cb8259.jpg",
+    "static/media/decorate3.jpg": "/pinterest/static/media/decorate3.01f79f328a96779f6241.jpg",
     "static/media/coffee.jpg": "/pinterest/static/media/coffee.46bc5b7a22a52d7fda9b.jpg",
     "static/media/dhosa.jpg": "/pinterest/static/media/dhosa.9aae7bddea3d92bf1904.jpg",
     "static/media/diy4.jpg": "/pinterest/static/media/diy4.747242539227735799a4.jpg",
@@ -18,15 +24,14 @@
     "static/media/tea.jpg": "/pinterest/static/media/tea.33e1af60b2fe7d3d6a49.jpg",
     "static/media/decorate1.jpg": "/pinterest/static/media/decorate1.d78ad4188250d4982097.jpg",
     "static/media/sandwich.jpg": "/pinterest/static/media/sandwich.89c3595a59ab1ece6139.jpg",
-    "static/media/decorate3.jpg": "/pinterest/static/media/decorate3.1e6b9f55722e36cce201.jpg",
     "static/media/decorate4.jpg": "/pinterest/static/media/decorate4.a054a68f87e8c2bddb59.jpg",
     "index.html": "/pinterest/index.html",
-    "main.ccdd60d9.css.map": "/pinterest/static/css/main.ccdd60d9.css.map",
-    "main.53e98cbd.js.map": "/pinterest/static/js/main.53e98cbd.js.map",
+    "main.07179576.css.map": "/pinterest/static/css/main.07179576.css.map",
+    "main.6ca1a34c.js.map": "/pinterest/static/js/main.6ca1a34c.js.map",
     "488.1f91b524.chunk.js.map": "/pinterest/static/js/488.1f91b524.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccdd60d9.css",
-    "static/js/main.53e98cbd.js"
+    "static/css/main.07179576.css",
+    "static/js/main.6ca1a34c.js"
   ]
 }
