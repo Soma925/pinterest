@@ -38,6 +38,7 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 export default function Body() {
   return (
     <div>
+    nnnncjjc
     {/* first part */}
     <div id="demo" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-indicators">
