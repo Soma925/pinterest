@@ -70,7 +70,11 @@ class Finalboards extends React.Component{
                     </div>
                 </nav>
 
-               
+                {/* <div className='navigation_bar'>
+                    <div onClick={()=>this.setState({show_modal:true})} className="pint_mock_icon_container add_pin">
+                        <FontAwesomeIcon icon={faPlus} />
+                    </div>
+                </div> */}
                 <div className="pin_container">
                     {this.state.pins}
                 </div>
