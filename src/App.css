@@ -46,11 +46,11 @@ nav{margin: 0px;padding: 10px 28px;background-color: white;height: 80px;width: 1
 
 
 /* SINGUP IDEA */
-.signupIdea{height: 569px;border: none;margin: 0;padding: 0;overflow: hidden;}
-.footer{height: 54px;border: solid rgb(254, 20, 20) 2px;}
-
+.signupIdea{height: 630px;border: none;margin: 0;padding: 0;overflow: hidden;}
+.footer{height: 34px;display: flex;justify-content: center;align-items: center;}
+.footerList{padding: 0 10px;text-decoration: none;color: black;font-weight: 500;font-size: 13px;}
 /* .pinsignupIdea{position: absolute;width: 100%;margin: 0;padding: 0;overflow: hidden;} */
-.multipleImage{width: 100%;height: 569px;margin: 0;padding: 0;position: absolute;}
+.multipleImage{width: 100%;height: 630px;margin: 0;padding: 0;position: absolute;}
 .pintext{color: white;align-self: center;position: relative;width: 400px;font-size: 70px;font-weight: 600; margin: 0 auto;}
 .pinsignupIdea{text-align: left;}
 
@@ -64,7 +64,7 @@ nav{margin: 0px;padding: 10px 28px;background-color: white;height: 80px;width: 1
 .Signtext1{margin: 0px auto 10px; width: 270px;box-sizing: border-box;text-align: center;}
 .signmain{ margin: 0px auto;width: 262px;box-sizing: border-box;}
 .singinpt{margin-bottom: 7px;border-radius: 13px;}
-.singbtn{border-radius: 20px;background-color: rgb(230, 0, 35);color: white;font-weight: 500;}
+.singbtn{border-radius: 20px;background-color: rgb(230, 0, 35);color: white;font-weight: 500;cursor: pointer;}
 .singbtn:hover{border-radius: 20px;background-color: rgb(182, 1, 29);color: white;font-weight: 500;}
 .Signtext2{margin: 10px auto 10px; width: 270px;box-sizing: border-box;text-align: center;font-weight: 600;}
 .singWithGgl{border-radius: 20px;background-color: transparent;font-weight: 500;border: black solid 1px;}
@@ -72,7 +72,7 @@ nav{margin: 0px;padding: 10px 28px;background-color: white;height: 80px;width: 1
 .Signtext3{text-align: center; margin: 10px auto 10px; width: 264px;box-sizing: border-box;font-size: 13px;}
 .pinsignup{position: relative;padding: 0px;left: 113px;}
 .pinsignupform{height: 500px;}
-
+.boldLog{text-decoration: none;color: black;font-weight: 600}
 
 
 /* pin */
@@ -114,13 +114,13 @@ nav{margin: 0px;padding: 10px 28px;background-color: white;height: 80px;width: 1
 .pin_max_height{max-height: 100%;}
 
 /* modalAndPin */
-.navigation_bar{width: 100%;height: 10%;position: fixed;top:0;}
+/* .navigation_bar{width: 100%;height: 10%;position: fixed;top:0;} */
 .navigation_bar .pint_mock_icon_container{width: 60px;height: 60px;transition-duration: 0.3s;position: relative;top: 10%;left:90%;}
 .navigation_bar .pint_mock_icon_container:hover{transform: scale(1.2); background-color: #767676;}
 
 
 /* finalboard */
-.pin_container{margin: 0;padding: 0;width: 80vw;display: grid;grid-template-columns: repeat(auto-fill,250px);grid-auto-rows: 10px;position: absolute;left: 50%;transform: translateX(-50%);justify-content: center;}
+.pin_container{margin: 0;padding: 0;width: 100%;display: grid;grid-template-columns: repeat(auto-fill,250px);grid-auto-rows: 10px;position: absolute;left: 50%;transform: translateX(-50%);justify-content: center;}
 .card{margin: 15px 10px;padding: 0;border-radius: 16px;position: relative;overflow: hidden;}
 .card_small{grid-row-end: span 26;}
 .card_medium{grid-row-end: span 33;}
