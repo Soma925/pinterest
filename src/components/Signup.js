@@ -2,11 +2,16 @@ import React from 'react'
 import '../../src/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPinterest } from '@fortawesome/free-brands-svg-icons';
+import { useNavigate } from 'react-router-dom';
  
 
 
 
 export default function Signup() {
+    const navigate=useNavigate();
+    function handleClick(){
+        navigate("/mainpage")
+    }
   return (
     <div>
         <div className="container mt-3 ">
@@ -14,21 +19,22 @@ export default function Signup() {
             <h1 className='signupFormh1'>Welcome to Pinterest</h1>
             <div className='Signtext1'>Find new ideas to try</div>
             <div className="signmain">
-                <form action="/action_page.php">
+                <form>
                     <div className="mb-3 mt-3">
                     <label for="email">Email</label>
-                    <input type="email" className="form-control singinpt" placeholder="Email" name="email"/>
+                    <input type="email" className="form-control singinpt"  placeholder="Email" name="email" />
                     </div>
                     <div className="mb-3">
                     <label for="pwd">Password</label>
-                    <input type="password" className="form-control singinpt" placeholder="Create a password" name="pswd"/>
+                    <input type="password" className="form-control singinpt"  placeholder="Create a password" name="pwd"/>
                     </div>
                     <div className="mb-3">
                     <label for="dob">Birthdate</label>
-                    <input type="date" className="form-control singinpt" name="dob"/>
+                    <input type="date" className="form-control singinpt"  name="dob"/>
                     </div>
                     <div className="d-grid gap-2">
-                        <button type="submit" className="btn singbtn">Continue</button>
+                        {/* <button type="submit" className="btn singbtn" onClick={handleClick}>Continue</button> */}
+                        <div className="btn singbtn" onClick={handleClick}>Continue</div>
                     </div>
                     
                 </form>
@@ -42,7 +48,7 @@ export default function Signup() {
                     </a>
                 </div>
 
-                <div className='Signtext3'>By continuing, you agree to Pinterest's Terms of service and acknowledge you've read our Privacy Policy. Notice at collection. <br />Already a member? <a href="/">Log in</a></div>
+                <div className='Signtext3'>By continuing, you agree to Pinterest's Terms of service and acknowledge you've read our Privacy Policy. Notice at collection. <br />Already a member? <a href="/" className='boldLog' >Log in</a></div>
                 
             </div>
         </div>
