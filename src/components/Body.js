@@ -1,6 +1,5 @@
 import React from 'react'
 import '../../src/App.css';
-// import Pin from './Pin.js';
 import Signup from './Signup';
 import img1 from '../../src/images/tea.jpg';
 import img2 from '../../src/images/singara.jpg';
@@ -164,20 +163,7 @@ export default function Body() {
     <div className="row signupIdea">
     <img className='multipleImage' src={multipleImage} alt="" />
         <div className="col pinsignupIdea">
-            {/* <div style={styles.pin_container}>
-                <Pin size='small' src={chiken4}></Pin>  
-                <Pin size='medium'/>  
-                <Pin size='large'/> 
-                <Pin size='small'/>  
-                <Pin size='medium'/>  
-                <Pin size='large'/>  
-                <Pin size='small'/>  
-                <Pin size='medium'/>  
-                <Pin size='large'/> 
-                <Pin size='small'/>  
-                <Pin size='medium'/>  
-                <Pin size='large'/> 
-            </div> */}
+            
             <div className="pintext">Sign up to get your ideas</div>
         </div>
         <div className="col pinsignup">
@@ -194,9 +180,3 @@ export default function Body() {
     </div>
   )
 }
-
-// const styles={
-//     pin_container:{margin:0,padding:0,width:'100%',backgroundColor:'transparent',position:'relative',left:'50%',transform:'translateX(-50%)',display:'grid',
-//         gridTemplateColumns:'repeat(auto-fill,250px)',gridAutoRows:'10px',
-//     }
-// }
