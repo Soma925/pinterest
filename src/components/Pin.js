@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import '../../src/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -25,6 +26,5 @@ export default function Pin(props) {
                 <img src={props.pinDetails.img_blob} alt="pin_image"/>
             </div>
         </div>
-   
   )
 }
