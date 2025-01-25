@@ -44,12 +44,12 @@ export default function Header() {
         </nav>
         {/* <!-- Modal --> */}
         <div className="modal fade" id="exampleModal" data-backdrop="static">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <div className="modal-dialog">
+                <div className="modal-content">
+                    <div className="modal-header">
+                        <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
                     </div>
-                    <div class="modal-body">
+                    <div className="modal-body">
                         <Signup/>
                     </div>
                 </div>
