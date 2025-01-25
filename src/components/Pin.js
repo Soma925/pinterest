@@ -4,26 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { faEllipsis } from '@fortawesome/free-solid-svg-icons';
 
-// function upload_img(event,setPinImage){
-//     if (event.target.files && event.target.files[0]){
-//         if(/image\/*/.test(event.target.files[0].type)){
-//             const reader=new FileReader();
-//             reader.onload= function(){
-//                 setPinImage(reader.result);
-//             }
-//             reader.readAsDataURL(event.target.files[0]);
-//         }
-//     }
-// }
-
-
-
 export default function Pin(props) {
-    //const[pinImage, setPinImage]=useState();
   return (
-    // <div>
-    //     <input onChange={event => upload_img(event,setPinImage)} type="file" name="picture" id="picture" /> 
-    //     <div className="card"> 
         <div className={`card card_${props.pinDetails.pin_size}`}>
             <div className="pin_title">{props.pinDetails.title}</div>
             <div className="pin_modal">
@@ -43,6 +25,6 @@ export default function Pin(props) {
                 <img src={props.pinDetails.img_blob} alt="pin_image"/>
             </div>
         </div>
-    // </div>
+   
   )
 }
