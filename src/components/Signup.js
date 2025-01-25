@@ -24,8 +24,8 @@ export default function Signup() {
                     <input type="password" className="form-control singinpt" id="pwd" placeholder="Create a password" name="pswd"/>
                     </div>
                     <div className="mb-3">
-                    <label for="pwd">Birthdate</label>
-                    <input type="date" className="form-control singinpt" id="pwd" placeholder="Create a password" name="pswd"/>
+                    <label for="dob">Birthdate</label>
+                    <input type="date" className="form-control singinpt" id="dob" name="dob"/>
                     </div>
                     <div className="d-grid gap-2">
                         <button type="submit" className="btn singbtn">Continue</button>
