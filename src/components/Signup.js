@@ -17,15 +17,15 @@ export default function Signup() {
                 <form action="/action_page.php">
                     <div className="mb-3 mt-3">
                     <label for="email">Email</label>
-                    <input type="email" className="form-control singinpt" id="email" placeholder="Email" name="email"/>
+                    <input type="email" className="form-control singinpt" placeholder="Email" name="email"/>
                     </div>
                     <div className="mb-3">
                     <label for="pwd">Password</label>
-                    <input type="password" className="form-control singinpt" id="pwd" placeholder="Create a password" name="pswd"/>
+                    <input type="password" className="form-control singinpt" placeholder="Create a password" name="pswd"/>
                     </div>
                     <div className="mb-3">
                     <label for="dob">Birthdate</label>
-                    <input type="date" className="form-control singinpt" id="dob" name="dob"/>
+                    <input type="date" className="form-control singinpt" name="dob"/>
                     </div>
                     <div className="d-grid gap-2">
                         <button type="submit" className="btn singbtn">Continue</button>
