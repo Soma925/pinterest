@@ -1,110 +1,58 @@
-import React,{useState} from 'react';
+import React from 'react'
 import '../../src/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
+import { faPinterest } from '@fortawesome/free-brands-svg-icons';
+import { useNavigate } from 'react-router-dom';
+ 
 
 
-function upload_img(event,pinDetails,setpinDetails,setshowLabel,setshowModalPin){
-    if (event.target.files && event.target.files[0]){
-        if(/image\/*/.test(event.target.files[0].type)){
-            const reader=new FileReader();
-            reader.onload= function(){
-                setpinDetails({
-                    ...pinDetails,
-                    img_blob:reader.result
-                });
-                setshowLabel(false);
-                setshowModalPin(true);
-            }
-            reader.readAsDataURL(event.target.files[0]);
-        }
+
+export default function Signup() {
+    const navigate=useNavigate();
+    function handleClick(){
+        navigate("/mainpage")
     }
-}
-
-function check_size(event) {
-    const image=event.target;
-    image.classList.add('pin_max_width');
-    if(image.getBoundingClientRect().width<image.parentElement.getBoundingClientRect().width ||image.getBoundingClientRect().height<image.parentElement.getBoundingClientRect().height){
-        image.classList.remove('pin_max_width');
-        image.classList.add('pin_max_height');
-    }
-
-    image.style.opacity=1;
-}
-
-function save_pin(pinDetails,add_pin) {
-    const users_data={
-        ...pinDetails,
-        author:'jack',
-        board:'default',
-        title: document.querySelector('#pin_title').value,
-        description: document.querySelector('#pin_description').value,
-        destination: document.querySelector('#pin_destination').value,
-        pin_size: document.querySelector('#pin_size').value,
-    }
-    add_pin(users_data);
-}
-
-export default function Uploadmodal(props) {
-    const[pinDetails, setpinDetails]=useState({
-        author:'',
-        board:'',
-        title:'',
-        description:'',
-        destination:'',
-        img_blob:'',
-        pin_size:'',
-        
-    });
-    const[showLable, setshowLabel]=useState(true);
-    const[showModalPin, setshowModalPin]=useState(false);
   return (
-    <div className="add_pin_modal">
-        <div className="add_pin_container">
-            <div className="side" id="left_side">
-                <div className="section1"></div>
-                <div className="section2">
-                    <label htmlFor="upload_img" id="upload_img_label" style={{display:showLable?'block':'none'}}>
-                        <div className="upload_img_container">
-                            <div className="pint_mock_icon_container">
-                                <FontAwesomeIcon className="print_mock_icon" icon={faArrowUpFromBracket} />
-                            </div>
-                            <div>Choose a file or drag and drop it here</div>
-                            <div>We recommend using high quality .jpg files less than 20MB or .mp4 files lessthan 200MB </div>
-                        </div>
-                        <input onChange={event => upload_img(event,pinDetails,setpinDetails,setshowLabel,setshowModalPin)} type="file" name="upload_img" id="upload_img" value=""/>
-                    </label>
-                    <div className="modal_pin" style={{display:showModalPin?'block':'none'}}>
-                        <div className="pin_image_modal">
-                            <img onLoad={check_size} src={pinDetails.img_blob} alt="pin_image_modal"/>
-                        </div>
+    <div>
+        <div className="container mt-3 ">
+            <div className="signuplogo"><FontAwesomeIcon className='signlogoicon' icon={faPinterest} /></div>
+            <h1 className='signupFormh1'>Welcome to Pinterest</h1>
+            <div className='Signtext1'>Find new ideas to try</div>
+            <div className="signmain">
+                <form>
+                    <div className="mb-3 mt-3">
+                    <label for="email">Email</label>
+                    <input type="email" className="form-control singinpt"  placeholder="Email" name="email" />
+                    </div>
+                    <div className="mb-3">
+                    <label for="pwd">Password</label>
+                    <input type="password" className="form-control singinpt"  placeholder="Create a password" name="pwd"/>
+                    </div>
+                    <div className="mb-3">
+                    <label for="dob">Birthdate</label>
+                    <input type="date" className="form-control singinpt"  name="dob"/>
+                    </div>
+                    <div className="d-grid gap-2">
+                        {/* <button type="submit" className="btn singbtn" onClick={handleClick}>Continue</button> */}
+                        <div className="btn singbtn" onClick={handleClick}>Continue</div>
                     </div>
                     
+                </form>
+                <div className='Signtext2'>OR</div>
+                <div className="d-grid gap-2">
+                    <a href="#!" className="btn bsb-btn-xl singWithGgl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-google" viewBox="0 0 16 16">
+                        <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                        </svg>
+                        <span className="ms-2 fs-6 text-uppercase">Continue With Google</span>
+                    </a>
                 </div>
-                <div className="section3">
-                    <div className="svae_from_site">Save from site</div>
-                </div>
-            </div>
-            <div className="side" id="right_side">
-                <div className="section1">
-                    <div className="select_size">
-                        <select defaultValue="Select" name="pin_size" id="pin_size">
-                            <option value="">Select</option>
-                            <option value="small">small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                        </select>
-                        <div onClick={()=>save_pin(pinDetails,props.add_pin)} className="save_pin">Save</div>
-                    </div>
-                </div>
-                <div className="section2">
-                    <input type="text" className="new_pin_image" id="pin_title" placeholder="Add a title"/>
-                    <input type="text" className="new_pin_image" id="pin_description" placeholder="Add a detailed description"/>
-                    <input type="text" className="new_pin_image" id="pin_destination" placeholder="add a link"/>
-                </div>
+
+                <div className='Signtext3'>By continuing, you agree to Pinterest's Terms of service and acknowledge you've read our Privacy Policy. Notice at collection. <br />Already a member? <a href="/" className='boldLog' >Log in</a></div>
+                
             </div>
         </div>
-      
+
     </div>
   )
 }
